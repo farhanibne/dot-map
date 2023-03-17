@@ -1,0 +1,67 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  width: 100vw;
+  background-color: #123;
+  color: #9ab;
+}
+
+svg {
+  width: 100vw;
+  height: 100vh;
+}
+
+.sparkle use {
+  animation: sparkle 5s linear infinite;
+}
+
+.sparkle use:nth-child(1n) {
+  animation-delay: -0.5s;
+}
+
+.sparkle use:nth-child(2n) {
+  animation-delay: -1s;
+}
+
+.sparkle use:nth-child(3n) {
+  animation-delay: -1.5s;
+}
+
+.sparkle use:nth-child(4n) {
+  animation-delay: -2s;
+}
+
+.sparkle use:nth-child(5n) {
+  animation-delay: -2.5s;
+}
+
+.sparkle use:nth-child(6n) {
+  animation-delay: -3s;
+}
+
+.sparkle use:nth-child(7n) {
+  animation-delay: -3.5s;
+}
+
+.sparkle use:nth-child(8n) {
+  animation-delay: -4s;
+}
+
+.sparkle use:nth-child(9n) {
+  animation-delay: -4.5s;
+}
+
+.sparkle use:nth-child(10n) {
+  animation-delay: -5s;
+}
+
+@keyframes sparkle {
+  0%, 80%, 100% {
+    color: currentcolor;
+  }
+  90% {
+    color: transparent;
+  }
+}
